@@ -12,7 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " seoul256 color theme: https://github.com/junegunn/seoul256.vim
-Plug 'junegunn/seoul256.vim'
+Plugin 'junegunn/seoul256.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
