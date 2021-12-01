@@ -1,7 +1,26 @@
 " be iMproved
 set nocompatible
 
-" utf-8 by default
+" required
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" seoul256 color theme: https://github.com/junegunn/seoul256.vim
+Plugin 'junegunn/seoul256.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+
+" required
+filetype plugin indent on
+
+" set default encoding
 set encoding=utf-8
 
 " syntax highlight
@@ -9,9 +28,6 @@ syntax enable
 
 " set 256 colors
 set t_Co=256
-
-" set color scheme from ~/.vim/colors/wombat.vim
-colorscheme wombat
 
 " show line numbers
 set number
@@ -22,14 +38,8 @@ set autoindent
 " expand tabs into spaces
 set expandtab
 
-" set tabs to have 4 spaces 
+" set tabs to have 4 spaces
 set tabstop=4
-
-" when using the >> or << commands, shift lines by 4 spaces
-set shiftwidth=4
-
-" set tabs for a shifttabs logic
-set smarttab
 
 " show a visual line under the cursor's current line
 set cursorline
@@ -43,11 +53,6 @@ let python_highlight_all = 1
 " not beep
 set noeb vb t_vb=
 
-
-
-
-" set foldcolumn=1
-
 " no backup files
 set nobackup
 
@@ -56,4 +61,14 @@ set noswapfile
 
 " only in case you don't want a backup file while editing
 set nowritebackup
+
+" Unified color scheme (default: dark)
+colo seoul256
+
+" Light color scheme
+" colo seoul256-light
+
+" Switch
+" set background=dark
+" set background=light
 
